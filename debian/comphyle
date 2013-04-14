@@ -4,6 +4,6 @@ BaseArchive: unstable
 BuildBranch: master
 DputTarget: hy-nightly-builds
 RootInit: hy/__init__.py
-ArchiveUrl: http://archive.pault.ag
+ArchiveUrl: http://every.day.gethy.org
 Section: main
 Suite: nightly
