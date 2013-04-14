@@ -1,0 +1,9 @@
+Maintainer: Paul Tagliamonte <paultag@debian.org>
+Source: hy
+BaseArchive: unstable
+BuildBranch: master
+DputTarget: hy-nightly-builds
+RootInit: hy/__init__.py
+ArchiveUrl: http://archive.pault.ag
+Section: main
+Suite: nightly
