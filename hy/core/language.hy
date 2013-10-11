@@ -124,6 +124,11 @@
   (import hy.macros)
   (hy.macros.macroexpand form --name--))
 
+(defn macroexpand-1 [form]
+  "Return a single step macro expansion of form"
+  (import hy.macros)
+  (hy.macros.macroexpand-1 form --name--))
+
 (defn neg? [n]
   "Return true if n is < 0"
   (_numeric-check n)
@@ -219,6 +224,7 @@
 
 (def *exports* ["cycle" "dec" "distinct" "drop" "drop_while" "empty?" "even?"
                 "filter" "float?" "inc" "instance?" "integer?" "iterable?"
-                "iterate" "iterator?" "macroexpand" "neg?" "none?" "nth"
-                "numeric?" "odd?" "pos?" "remove" "repeat" "repeatedly"
-                "second" "string?" "take" "take_nth" "take_while" "zero?"])
+                "iterate" "iterator?" "macroexpand" "macroexpand_1" "neg?"
+                "none?" "nth" "numeric?" "odd?" "pos?" "remove" "repeat"
+                "repeatedly" "second" "string?" "take" "take_nth" "take_while"
+                "zero?"])
